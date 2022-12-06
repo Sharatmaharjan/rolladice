@@ -74,10 +74,10 @@ btnHold.addEventListener('click', function () {
     //diplay continuous  results until finish
     let player1 = Number(playerOneTotalScoreEl.textContent);
     let player2 = Number(playerTwoTotalScoreEl.textContent);
-    if (player1 >= 10 || player2 >= 10) {
+    if (player1 >= 100 || player2 >= 100) {
       diceEl.classList.add('hidden');
       resultMessage.textContent =
-        player1 >= 10
+        player1 >= 100
           ? `Player 1 Won by ${player1 - player2} points. 🎉🎉🎉 🙌🙌🙌`
           : `Player 2 Won by ${player2 - player1} points. 🎉🎉🎉 🙌🙌🙌`;
       playing = false;
